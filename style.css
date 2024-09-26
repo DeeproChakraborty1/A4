@@ -1,0 +1,41 @@
+.rubrics-cube {
+    width: 200px;
+    height: 200px;
+    perspective: 800px;
+    transform-style: preserve-3d;
+  }
+  
+  .rubric {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 200px;
+    transition: transform 0.3s ease;
+  }
+  
+  .front {
+    transform: rotateY(0deg) translateZ(100px);
+  }
+  
+  .back {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  
+  .top {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
